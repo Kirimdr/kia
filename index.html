@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KirIA Chatbot</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body class="dark-theme">
+    <header class="bg-gradient text-white text-center py-3 fixed-top">
+        <div class="container">
+            <h1><i class="fas fa-robot mr-2"></i>KirIA</h1>
+        </div>
+    </header>
+
+    <div class="container-fluid mt-5 pt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card chat-container shadow" id="chat-container">
+                    <div class="card-header bg-gradient text-white">
+                        <h5 class="mb-0"><i class="fas fa-comments mr-2"></i>Chat with KirIA</h5>
+                    </div>
+                    <div class="card-body phone" id="phone">
+                        <div class="screen" id="chat-screen">
+                            <div class="message received">
+                                <div class="message-content">
+                                    Bonjour ! Comment puis-je vous aider aujourd'hui ?
+                                </div>
+                                <div class="message-time">14:00</div>
+                            </div>
+                        </div>
+                        <div class="input-group mt-3 message-input-container">
+                            <textarea id="user-input" class="form-control custom-textarea" placeholder="Tapez votre message ici..." rows="1"></textarea>
+                            <div class="input-group-append">
+                                <button id="send-btn" class="btn btn-primary send-btn" title="Envoyer">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gradient text-white py-3 fixed-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-left">
+                    <p class="mb-0">Créé par Robinsan Kiritheepan &copy; 2024</p>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <a href="#" class="text-white mr-3"><i class="fab fa-github"></i></a>
+                    <a href="#" class="text-white mr-3"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-white"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="toggle-chatbot" class="btn btn-primary chat-icon">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
